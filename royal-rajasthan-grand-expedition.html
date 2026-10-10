@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Rajasthan Grand Expedition from Mumbai (7 Days) | Dev Tour and Travels</title>
+  <meta name="description" content="Book 7 Days Royal Rajasthan Tour from Mumbai @ ₹28,499. Udaipur Lake City, Jodhpur Blue City, Pushkar, and Jaipur Pink City. Includes return domestic flights, 4★ heritage palace stays, and private car.">
+  <meta name="keywords" content="Royal Rajasthan tour from Mumbai, Udaipur Jodhpur Jaipur package, Lake Pichola boat ride, Mehrangarh Fort, Dev Tour and Travels">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/package-detail.css">
+</head>
+<body>
+
+  <!-- Top Notification & Contact Bar -->
+  <div class="top-header-bar">
+    <div class="container">
+      <div class="top-bar-flex">
+        <div class="top-contact-info">
+          <span><i class="fa fa-clock"></i> Mon to Sat: 09:30 AM – 07:00 PM</span>
+          <a href="tel:+919876543210"><i class="fa fa-phone"></i> +91 98765 43210</a>
+          <a href="mailto:info@devtourandtravels.com"><i class="fa fa-envelope"></i> info@devtourandtravels.com</a>
+          <span class="top-badge-special"><i class="fa fa-plane"></i> Return Flights Included (Mumbai-Udaipur & Jaipur-Mumbai)</span>
+        </div>
+        <div class="top-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Navbar -->
+  <header class="site-navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo-wrap">
+        <div class="brand-icon"><i class="fa fa-plane-departure"></i></div>
+        <div class="brand-titles">
+          <span class="brand-title-main">DEV TOUR <span>& TRAVELS</span></span>
+          <span class="brand-tagline">Crafting Extraordinary Journeys</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links-desktop">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="index.html#packagesCatalogSection" class="nav-link active">All Packages</a></li>
+          <li class="nav-item"><a href="index.html#mumbaiHighlightsSection" class="nav-link">Mumbai Sights</a></li>
+          <li class="nav-item"><a href="index.html#faqSection" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="index.html#contactSection" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar-action-btns">
+        <a href="index.html#packagesCatalogSection" class="btn-custom btn-outline-custom" style="padding: 7px 16px; font-size: 0.85rem;">
+          <i class="fa fa-arrow-left"></i> All Packages
+        </a>
+        <button class="btn-custom btn-secondary-custom" onclick="scrollToBookingForm()">
+          <i class="fa fa-calendar-check"></i> Book Now
+        </button>
+      </div>
+
+      <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; padding-bottom:12px; border-bottom:1px solid #e2e8f0;">
+      <div class="brand-titles">
+        <span class="brand-title-main" style="font-size:1.15rem;">DEV TOUR <span>& TRAVELS</span></span>
+      </div>
+      <button id="drawerCloseBtn" style="background:none; border:none; font-size:1.2rem; color:var(--dark); cursor:pointer;">
+        <i class="fa fa-xmark"></i>
+      </button>
+    </div>
+    <ul style="list-style:none; display:flex; flex-direction:column; gap:14px; font-weight:600;">
+      <li><a href="index.html" style="color:var(--primary);"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="index.html#packagesCatalogSection"><i class="fa fa-map-location-dot"></i> View All Packages</a></li>
+      <li><a href="#itinerarySection"><i class="fa fa-calendar-days"></i> Itinerary</a></li>
+      <li><a href="#inclusionsSection"><i class="fa fa-circle-check"></i> Inclusions</a></li>
+      <li><a href="javascript:void(0)" onclick="scrollToBookingForm()"><i class="fa fa-paper-plane"></i> Book This Tour</a></li>
+    </ul>
+    <div style="margin-top:28px; padding-top:20px; border-top:1px solid #e2e8f0;">
+      <a href="tel:+919876543210" class="btn-custom btn-primary-custom" style="width:100%; margin-bottom:10px;">
+        <i class="fa fa-phone"></i> Call +91 98765 43210
+      </a>
+      <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20am%20interested%20in%20Royal%20Rajasthan%20Expedition." class="btn-custom" style="background:#25d366; color:#fff; width:100%; display:block; text-align:center;">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <!-- Breadcrumbs Bar -->
+  <div class="breadcrumbs-bar">
+    <div class="container">
+      <ul class="breadcrumbs-list">
+        <li><a href="index.html">Home</a></li>
+        <li><i class="fa fa-chevron-right" style="font-size:0.65rem;"></i></li>
+        <li><a href="index.html#packagesCatalogSection">Royal Heritage Tours</a></li>
+        <li><i class="fa fa-chevron-right" style="font-size:0.65rem;"></i></li>
+        <li class="current">Royal Rajasthan Grand Expedition from Mumbai</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Package Hero Section -->
+  <section class="pkg-hero" style="--hero-bg-img: url('https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1600&q=80')">
+    <div class="container">
+      <div class="pkg-hero-grid">
+        <div>
+          <div class="pkg-hero-badges">
+            <span class="pkg-badge pkg-badge-luxury"><i class="fa fa-crown"></i> Royal Heritage</span>
+            <span class="pkg-badge pkg-badge-duration"><i class="fa fa-clock"></i> 06 Nights / 07 Days</span>
+            <span class="pkg-badge pkg-badge-regular"><i class="fa fa-plane"></i> Return Flights Included</span>
+          </div>
+
+          <h1 class="pkg-hero-title">Royal Rajasthan Grand Expedition from Mumbai</h1>
+
+          <div class="pkg-hero-meta">
+            <span class="rating-box"><i class="fa fa-star"></i> 4.88 / 5.0</span>
+            <span><i class="fa fa-users"></i> 130 Satisfied Royalty Guests</span>
+            <span><i class="fa fa-location-dot"></i> Mumbai » Udaipur » Jodhpur » Jaipur</span>
+          </div>
+
+          <div class="pkg-hero-route">
+            <i class="fa fa-route" style="color:var(--secondary); font-size:1.1rem;"></i>
+            <span><strong>Route:</strong> Mumbai <span class="route-arrow">»</span> Flight to Udaipur (Lake City) <span class="route-arrow">»</span> Jodhpur (Blue City) <span class="route-arrow">»</span> Pushkar <span class="route-arrow">»</span> Jaipur <span class="route-arrow">»</span> Flight to Mumbai</span>
+          </div>
+        </div>
+
+        <!-- Hero Price Card (Desktop) -->
+        <div class="pkg-hero-price-card">
+          <span class="discount-pill"><i class="fa fa-tags"></i> 25% Royal Discount</span>
+          <div class="strike-price">₹38,000</div>
+          <div class="final-price">₹28,499</div>
+          <span class="price-unit">per person (Both Flights Included)</span>
+
+          <button class="btn-custom btn-secondary-custom" style="width:100%; margin-bottom:10px;" onclick="scrollToBookingForm()">
+            <i class="fa fa-paper-plane"></i> Book / Send Inquiry
+          </button>
+          <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20am%20interested%20in%20Royal%20Rajasthan%20Expedition%20(pkg-8)." target="_blank" class="btn-custom" style="background:#25d366; color:#fff; width:100%; font-size:0.875rem;">
+            <i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Highlights Bar -->
+  <div class="pkg-highlights-bar">
+    <div class="container">
+      <div class="pkg-highlights-flex">
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-plane"></i></span>
+          <div>
+            <div>Both Flights Included</div>
+            <small style="color:var(--text-muted); font-weight:normal;">BOM-UDR & JAI-BOM</small>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-fort-awesome"></i></span>
+          <div>
+            <div>6 Nights Heritage Stays</div>
+            <small style="color:var(--text-muted); font-weight:normal;">4★ Historic Haveli Hotels</small>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-ship"></i></span>
+          <div>
+            <div>Lake Pichola Cruise</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Sunset Boat Ride Udaipur</small>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-utensils"></i></span>
+          <div>
+            <div>Royal Breakfast & Dinner</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Authentic Rajasthani Thali</small>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-car"></i></span>
+          <div>
+            <div>Private AC Chauffeur</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Dedicated Sedan / SUV</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Layout Section -->
+  <section class="pkg-content-section">
+    <div class="container">
+      <div class="pkg-layout-grid">
+        
+        <!-- Left Main Details Column -->
+        <main class="pkg-main-details">
+          
+          <article class="pkg-card-box">
+            <h2 class="pkg-card-title"><i class="fa fa-compass"></i> Royal Expedition Overview</h2>
+            <p class="pkg-overview-text">
+              Live like royalty across Rajasthan's most romantic and majestic citadel cities! Originating conveniently from Mumbai with direct domestic flights, the <strong>Royal Rajasthan Grand Expedition</strong> takes you across Udaipur (The City of Lakes), Jodhpur (The Blue Sun City), sacred Pushkar, and Jaipur (The Pink Capital).
+            </p>
+            <p class="pkg-overview-text">
+              Glide on sunset boat rides across Lake Pichola viewing Jag Mandir and the Lake Palace, admire the towering invincible walls of Mehrangarh Fort towering 400 feet above the indigo-tinted houses of Jodhpur, visit the world-famous marble Jain temple marvels at Ranakpur, and revel in authentic Rajasthani cultural dances and royal feasts.
+            </p>
+
+            <div class="pkg-gallery-grid">
+              <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=800&q=80" alt="Royal Palace Rajasthan" class="pkg-gallery-main">
+              <div class="pkg-gallery-thumb-wrap">
+                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=400&q=80" alt="Amber Fort" class="pkg-gallery-thumb">
+                <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=400&q=80" alt="Mumbai Connection" class="pkg-gallery-thumb">
+              </div>
+            </div>
+          </article>
+
+          <!-- Day-by-Day Itinerary -->
+          <article class="pkg-card-box" id="itinerarySection">
+            <h2 class="pkg-card-title"><i class="fa fa-calendar-days"></i> Itinerary Schedule</h2>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 1</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-plane"></i> Mumbai to Udaipur Flight</span>
+              </div>
+              <h3 class="day-title-text">Flight from Mumbai to Udaipur & Lake Pichola Boat Ride</h3>
+              <p class="day-description-text">
+                Morning departure from Mumbai Airport on your included direct flight to Udaipur Maharana Pratap Airport. Warm traditional Rajasthani welcome and transfer to your 4★ heritage palace hotel. Afternoon tour of the grand City Palace complex overlooking the lake. Evening romantic sunset boat ride on <strong>Lake Pichola</strong> cruising past the white marble Taj Lake Palace and Jag Mandir Island.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 2</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Udaipur City Sights</span>
+              </div>
+              <h3 class="day-title-text">Saheliyon Ki Bari, Jagdish Temple & Vintage Car Collection</h3>
+              <p class="day-description-text">
+                Explore the ornamental marble fountains of <strong>Saheliyon Ki Bari</strong> (Courtyard of the Maids of Honour), the 17th-century carved stone Jagdish Temple, and the royal Vintage Classic Car Museum featuring Rolls Royce and Cadillacs of the Maharanas of Mewar. Evening cultural folk dance performance at Bagore Ki Haveli.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 3</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Udaipur to Jodhpur via Ranakpur (260 km)</span>
+              </div>
+              <h3 class="day-title-text">Ranakpur Jain Sculptures & Arrival in the Blue City Jodhpur</h3>
+              <p class="day-description-text">
+                Drive towards Jodhpur through the Aravali ranges. En-route stop at the stunning 15th-century <strong>Ranakpur Jain Temple</strong>, renowned for its 1,444 uniquely carved white marble pillars where no two pillars share the same design. Arrive in Jodhpur and check-in to heritage hotel.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 4</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Jodhpur to Jaipur via Pushkar (330 km)</span>
+              </div>
+              <h3 class="day-title-text">Mehrangarh Fort, Jaswant Thada & Sacred Pushkar Lake</h3>
+              <p class="day-description-text">
+                Morning visit to colossal <strong>Mehrangarh Fort</strong>, one of India's largest forts featuring palatial courtyards and weapons galleries. Visit the white marble royal cenotaph Jaswant Thada. Proceed towards Jaipur, stopping at holy <strong>Pushkar</strong> to visit the rare Lord Brahma Temple and the sacred Pushkar Sarovar. Arrive in Jaipur.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 5</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Jaipur Pink City Highlights</span>
+              </div>
+              <h3 class="day-title-text">Amber Fort, Hawa Mahal, City Palace & Johari Bazaar</h3>
+              <p class="day-description-text">
+                Morning jeep ascent to hilltop <strong>Amber Fort</strong> and Sheesh Mahal. Photo stop at Jal Mahal (Water Palace), visit the royal City Palace Museum and UNESCO Jantar Mantar observatory. Free evening for shopping for block-print textiles, blue pottery, and silver jewelry in Johari Bazaar.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 6</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Forts & Rajasthani Feast</span>
+              </div>
+              <h3 class="day-title-text">Nahargarh Fort Sunset & Chokhi Dhani Cultural Dinner</h3>
+              <p class="day-description-text">
+                Visit Nahargarh Fort with breathtaking panoramic views over the Jaipur skyline. Evening visit to ethnic village resort <strong>Chokhi Dhani</strong> for traditional puppet shows, camel rides, folk dances, and an authentic royal Rajasthani banquet feast.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 7</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-plane"></i> Jaipur to Mumbai Return Flight</span>
+              </div>
+              <h3 class="day-title-text">Return Flight to Mumbai</h3>
+              <p class="day-description-text">
+                Enjoy royal breakfast at the hotel. Transfer to Jaipur International Airport for your included direct flight back to Mumbai, landing with unforgettable memories of regal Rajasthan.
+              </p>
+            </div>
+          </article>
+
+          <!-- Inclusions & Exclusions -->
+          <article class="pkg-card-box" id="inclusionsSection">
+            <h2 class="pkg-card-title"><i class="fa fa-list-check"></i> What's Included & Excluded</h2>
+            <div class="inc-exc-grid">
+              <div class="inc-box">
+                <div class="inc-box-title"><i class="fa fa-circle-check"></i> Inclusions</div>
+                <ul class="feature-check-list">
+                  <li><i class="fa fa-check"></i> Domestic air tickets (Mumbai-Udaipur and Jaipur-Mumbai) included</li>
+                  <li><i class="fa fa-check"></i> 6 Nights stay in 4★ heritage palaces (2N Udaipur, 1N Jodhpur, 3N Jaipur)</li>
+                  <li><i class="fa fa-check"></i> Daily buffet breakfast and lavish multi-course dinners</li>
+                  <li><i class="fa fa-check"></i> Sunset boat cruise on Lake Pichola in Udaipur</li>
+                  <li><i class="fa fa-check"></i> Private AC Sedan / Crysta for entire Rajasthan leg</li>
+                  <li><i class="fa fa-check"></i> Chokhi Dhani cultural village ticket with royal feast</li>
+                  <li><i class="fa fa-check"></i> All highway tolls, fuel, interstate taxes & driver allowances</li>
+                </ul>
+              </div>
+
+              <div class="exc-box">
+                <div class="exc-box-title"><i class="fa fa-circle-xmark"></i> Exclusions</div>
+                <ul class="feature-check-list">
+                  <li><i class="fa fa-xmark"></i> Monument entrance audio-guides / fast-track camera passes</li>
+                  <li><i class="fa fa-xmark"></i> Daily lunches and personal shopping</li>
+                  <li><i class="fa fa-xmark"></i> Any expenses not listed under inclusions</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </main>
+
+        <!-- Right Sticky Sidebar -->
+        <aside class="pkg-sticky-sidebar" id="packageBookingSidebar">
+          <div class="sidebar-booking-card">
+            <div class="sidebar-card-header">
+              <h3>Book Royal Rajasthan</h3>
+              <p>Both Flights Included • Instant WhatsApp Quote</p>
+            </div>
+
+            <div class="sidebar-card-body" id="packageBookingCardBody">
+              <div class="sidebar-price-banner">
+                <div>
+                  <span style="font-size:0.75rem; color:var(--text-muted); display:block;">Special Price</span>
+                  <strong style="font-size:1.5rem; color:var(--primary); font-family:'Outfit',sans-serif;">₹28,499</strong>
+                  <span style="font-size:0.75rem; color:var(--text-muted);">/ person</span>
+                </div>
+                <span class="pkg-badge pkg-badge-luxury" style="font-size:0.7rem;">Save ₹9,501</span>
+              </div>
+
+              <form id="packageBookingForm" data-pkg-title="Royal Rajasthan Grand Expedition from Mumbai">
+                <div class="sidebar-booking-form">
+                  <div class="form-group-custom">
+                    <label for="fullName">Your Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="e.g. Manav Singhania" required>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="phone">Phone / WhatsApp *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. +91 98765 43210" required>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. manav@example.com" required>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="travelDate">Travel Date *</label>
+                    <input type="date" id="travelDate" name="travelDate" required>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="travelers">Travelers *</label>
+                    <select id="travelers" name="travelers">
+                      <option value="2 Adults (Twin Sharing / Couple)">2 Adults (Couple / Twin Sharing)</option>
+                      <option value="Family (2 Adults + Children)">Family (2 Adults + Children)</option>
+                      <option value="Group (4+ Persons)">Group (4+ Persons)</option>
+                    </select>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="hotelCategory">Heritage Hotel Tier</label>
+                    <select id="hotelCategory" name="hotelCategory">
+                      <option value="4-Star Heritage Haveli">4-Star Heritage Haveli / Palaces</option>
+                      <option value="5-Star Grand Luxury (Taj Lake Palace / Umaid Bhawan)">5-Star Grand Luxury (Taj / Oberoi)</option>
+                    </select>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="message">Special Requests</label>
+                    <textarea id="message" name="message" rows="2" placeholder="Mention departure flight timing preferences..."></textarea>
+                  </div>
+                  <button type="submit" class="btn-custom btn-secondary-custom" style="width:100%; margin-top:8px;">
+                    <i class="fa fa-paper-plane"></i> Get Free Quote on WhatsApp
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="sidebar-help-box">
+            <div style="width:48px; height:48px; border-radius:50%; background:var(--secondary-soft); color:var(--secondary); display:inline-flex; align-items:center; justify-content:center; font-size:1.3rem; margin-bottom:10px;">
+              <i class="fa fa-phone-volume"></i>
+            </div>
+            <h4>Rajasthan Desk</h4>
+            <p>Speak directly with our palace holiday consultant.</p>
+            <a href="tel:+919876543210" class="btn-custom btn-primary-custom" style="width:100%; margin-bottom:8px;">
+              <i class="fa fa-phone"></i> +91 98765 43210
+            </a>
+            <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20have%20questions%20on%20Royal%20Rajasthan%20Expedition." class="btn-custom" style="background:#25d366; color:#fff; width:100%;">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-col">
+          <div class="brand-titles" style="margin-bottom:14px;">
+            <span class="brand-title-main" style="color:#ffffff;">DEV TOUR <span style="color:var(--secondary)">& TRAVELS</span></span>
+            <span class="brand-tagline" style="color:#94a3b8;">Crafting Extraordinary Journeys</span>
+          </div>
+          <p style="color:#94a3b8; font-size:0.85rem; line-height:1.6;">
+            India’s premier agency for authentic royal heritage palace journeys, luxury family holidays, and bespoke flights.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Popular Tours in India</h4>
+          <ul class="footer-nav-list">
+            <li><a href="royal-rajasthan-grand-expedition.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Royal Rajasthan Expedition</a></li>
+            <li><a href="golden-triangle-mumbai-express.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Golden Triangle Circuit</a></li>
+            <li><a href="mumbai-highlights-bollywood-tour.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Mumbai Highlights Tour</a></li>
+            <li><a href="mumbai-to-goa-coastal-odyssey.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Mumbai to Goa Odyssey</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html#faqSection">Frequently Asked Questions</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollToBookingForm()">Custom Itinerary Request</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="footer-contact-items">
+            <li><i class="fa fa-phone"></i> +91 98765 43210 / +91 99100 49132</li>
+            <li><i class="fa fa-envelope"></i> info@devtourandtravels.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <p>© 2026 <strong>Dev Tour and Travels</strong>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Action Bar -->
+  <div class="mobile-bottom-quickbar">
+    <div class="mobile-bottom-grid">
+      <a href="tel:+919876543210" class="mobile-bottom-item call"><i class="fa fa-phone"></i><span>Call</span></a>
+      <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20want%20to%20book%20Royal%20Rajasthan%20Expedition." target="_blank" class="mobile-bottom-item whatsapp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+      <a href="javascript:void(0)" onclick="scrollToBookingForm()" class="mobile-bottom-item enquiry"><i class="fa fa-paper-plane"></i><span>Book ₹28,499</span></a>
+    </div>
+  </div>
+
+  <script src="js/package-page.js"></script>
+</body>
+</html>

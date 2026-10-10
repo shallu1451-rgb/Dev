@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mumbai City Highlights & Bollywood Glamour Tour (3 Days / 2 Nights) | Dev Tour and Travels</title>
+  <meta name="description" content="Book 3 Days Mumbai City Highlights & Bollywood Tour starting @ ₹9,499. Includes 3★/4★ hotel, private AC cab, Elephanta Caves ferry, Film City Bollywood tour, and Marine Drive.">
+  <meta name="keywords" content="Mumbai City Highlights, Bollywood Studio Tour, Elephanta Caves, Gateway of India tour, Mumbai 3 days tour package">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/package-detail.css">
+</head>
+<body>
+
+  <!-- Top Notification & Contact Bar -->
+  <div class="top-header-bar">
+    <div class="container">
+      <div class="top-bar-flex">
+        <div class="top-contact-info">
+          <span><i class="fa fa-clock"></i> Mon to Sat: 09:30 AM – 07:00 PM</span>
+          <a href="tel:+919876543210"><i class="fa fa-phone"></i> +91 98765 43210</a>
+          <a href="mailto:info@devtourandtravels.com"><i class="fa fa-envelope"></i> info@devtourandtravels.com</a>
+          <span class="top-badge-special"><i class="fa fa-tag"></i> Flat 30% Off Autumn Special</span>
+        </div>
+        <div class="top-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Navbar -->
+  <header class="site-navbar">
+    <div class="container navbar-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo-wrap">
+        <div class="brand-icon">
+          <i class="fa fa-plane-departure"></i>
+        </div>
+        <div class="brand-titles">
+          <span class="brand-title-main">DEV TOUR <span>& TRAVELS</span></span>
+          <span class="brand-tagline">Crafting Extraordinary Journeys</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav>
+        <ul class="nav-links-desktop">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="index.html#packagesCatalogSection" class="nav-link active">All Packages</a></li>
+          <li class="nav-item"><a href="index.html#mumbaiHighlightsSection" class="nav-link">Mumbai Sights</a></li>
+          <li class="nav-item"><a href="index.html#faqSection" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="index.html#contactSection" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="navbar-action-btns">
+        <a href="index.html#packagesCatalogSection" class="btn-custom btn-outline-custom" style="padding: 7px 16px; font-size: 0.85rem;">
+          <i class="fa fa-arrow-left"></i> All Packages
+        </a>
+        <button class="btn-custom btn-secondary-custom" onclick="scrollToBookingForm()">
+          <i class="fa fa-calendar-check"></i> Book Now
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; padding-bottom:12px; border-bottom:1px solid #e2e8f0;">
+      <div class="brand-titles">
+        <span class="brand-title-main" style="font-size:1.15rem;">DEV TOUR <span>& TRAVELS</span></span>
+      </div>
+      <button id="drawerCloseBtn" style="background:none; border:none; font-size:1.2rem; color:var(--dark); cursor:pointer;">
+        <i class="fa fa-xmark"></i>
+      </button>
+    </div>
+    <ul style="list-style:none; display:flex; flex-direction:column; gap:14px; font-weight:600;">
+      <li><a href="index.html" style="color:var(--primary);"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="index.html#packagesCatalogSection"><i class="fa fa-map-location-dot"></i> View All Packages</a></li>
+      <li><a href="#itinerarySection"><i class="fa fa-calendar-days"></i> Day-Wise Itinerary</a></li>
+      <li><a href="#inclusionsSection"><i class="fa fa-circle-check"></i> Inclusions</a></li>
+      <li><a href="javascript:void(0)" onclick="scrollToBookingForm()"><i class="fa fa-paper-plane"></i> Book This Tour</a></li>
+    </ul>
+    <div style="margin-top:28px; padding-top:20px; border-top:1px solid #e2e8f0;">
+      <a href="tel:+919876543210" class="btn-custom btn-primary-custom" style="width:100%; margin-bottom:10px;">
+        <i class="fa fa-phone"></i> Call +91 98765 43210
+      </a>
+      <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20am%20interested%20in%20Mumbai%20City%20Highlights%20Tour." class="btn-custom" style="background:#25d366; color:#fff; width:100%; display:block; text-align:center;">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <!-- Breadcrumbs Bar -->
+  <div class="breadcrumbs-bar">
+    <div class="container">
+      <ul class="breadcrumbs-list">
+        <li><a href="index.html">Home</a></li>
+        <li><i class="fa fa-chevron-right" style="font-size:0.65rem;"></i></li>
+        <li><a href="index.html#packagesCatalogSection">Mumbai Packages</a></li>
+        <li><i class="fa fa-chevron-right" style="font-size:0.65rem;"></i></li>
+        <li class="current">Mumbai City Highlights & Bollywood Tour</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Package Hero Section -->
+  <section class="pkg-hero" style="--hero-bg-img: url('https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1600&q=80')">
+    <div class="container">
+      <div class="pkg-hero-grid">
+        <div>
+          <div class="pkg-hero-badges">
+            <span class="pkg-badge pkg-badge-bestseller"><i class="fa fa-award"></i> Best Seller</span>
+            <span class="pkg-badge pkg-badge-duration"><i class="fa fa-clock"></i> 02 Nights / 03 Days</span>
+            <span class="pkg-badge pkg-badge-regular"><i class="fa fa-city"></i> Maximum City Circuit</span>
+          </div>
+
+          <h1 class="pkg-hero-title">Mumbai City Highlights & Bollywood Glamour Tour</h1>
+
+          <div class="pkg-hero-meta">
+            <span class="rating-box">
+              <i class="fa fa-star"></i> 4.9 / 5.0
+            </span>
+            <span><i class="fa fa-users"></i> 142 Verified Travelers</span>
+            <span><i class="fa fa-location-dot"></i> Starting & Ending in Mumbai</span>
+          </div>
+
+          <div class="pkg-hero-route">
+            <i class="fa fa-route" style="color:var(--secondary); font-size:1.1rem;"></i>
+            <span><strong>Route:</strong> Gateway of India <span class="route-arrow">»</span> Marine Drive <span class="route-arrow">»</span> CST Station <span class="route-arrow">»</span> Film City <span class="route-arrow">»</span> Bandra Bandstand</span>
+          </div>
+        </div>
+
+        <!-- Hero Price Card (Desktop) -->
+        <div class="pkg-hero-price-card">
+          <span class="discount-pill"><i class="fa fa-tags"></i> Special 30% Off</span>
+          <div class="strike-price">₹13,500</div>
+          <div class="final-price">₹9,499</div>
+          <span class="price-unit">per person on twin sharing basis</span>
+
+          <button class="btn-custom btn-secondary-custom" style="width:100%; margin-bottom:10px;" onclick="scrollToBookingForm()">
+            <i class="fa fa-paper-plane"></i> Book / Send Inquiry
+          </button>
+          <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20am%20interested%20in%20Mumbai%20City%20Highlights%20(pkg-1)." target="_blank" class="btn-custom" style="background:#25d366; color:#fff; width:100%; font-size:0.875rem;">
+            <i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Highlights Bar -->
+  <div class="pkg-highlights-bar">
+    <div class="container">
+      <div class="pkg-highlights-flex">
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-hotel"></i></span>
+          <div>
+            <div>3★ / 4★ Boutique Hotel</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Sanitized Deluxe Rooms</small>
+          </div>
+        </div>
+
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-utensils"></i></span>
+          <div>
+            <div>Daily Breakfast & Dinner</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Buffet Meal Inclusions</small>
+          </div>
+        </div>
+
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-car"></i></span>
+          <div>
+            <div>Private AC Sedan / SUV</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Dedicated Chauffeur</small>
+          </div>
+        </div>
+
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-clapperboard"></i></span>
+          <div>
+            <div>Film City Studio Passes</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Guided Sets Walkthrough</small>
+          </div>
+        </div>
+
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-headset"></i></span>
+          <div>
+            <div>24x7 Trip Concierge</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Dev Travels Dedicated Support</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Layout Section -->
+  <section class="pkg-content-section">
+    <div class="container">
+      <div class="pkg-layout-grid">
+        
+        <!-- Left Main Details Column -->
+        <main class="pkg-main-details">
+          
+          <!-- Overview Card -->
+          <article class="pkg-card-box">
+            <h2 class="pkg-card-title"><i class="fa fa-compass"></i> Tour Overview</h2>
+            <p class="pkg-overview-text">
+              Experience the true pulse and grandeur of India’s commercial capital! The <strong>Mumbai City Highlights & Bollywood Glamour Tour</strong> is our signature 3-day handcrafted holiday designed to immerse you into the dual personality of the Maximum City: colonial Victorian heritage and modern Bollywood stardom.
+            </p>
+            <p class="pkg-overview-text">
+              From the historic arches of the Gateway of India to the iconic evening curves of the Queen’s Necklace at Marine Drive, explore UNESCO World Heritage architecture, ancient rock sculptures at Elephanta Caves, and enjoy behind-the-scenes access to live television and movie sets at Goregaon Film City.
+            </p>
+
+            <!-- Image Showcase Grid -->
+            <div class="pkg-gallery-grid">
+              <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=800&q=80" alt="Gateway of India" class="pkg-gallery-main">
+              <div class="pkg-gallery-thumb-wrap">
+                <img src="https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&w=400&q=80" alt="Marine Drive" class="pkg-gallery-thumb">
+                <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=400&q=80" alt="CST Mumbai" class="pkg-gallery-thumb">
+              </div>
+            </div>
+          </article>
+
+          <!-- Day-by-Day Itinerary -->
+          <article class="pkg-card-box" id="itinerarySection">
+            <h2 class="pkg-card-title"><i class="fa fa-calendar-days"></i> Comprehensive Day-by-Day Itinerary</h2>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 1</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> South Mumbai Heritage Circuit</span>
+              </div>
+              <h3 class="day-title-text">Colonial South Mumbai, Gateway of India & Marine Drive Sunset</h3>
+              <p class="day-description-text">
+                <strong>Morning / Afternoon:</strong> Warm welcome upon your arrival at Mumbai Chhatrapati Shivaji Maharaj Airport or CST Railway Station. Our executive assists with private AC transfer to your selected 3★/4★ hotel. After check-in and brief refreshment, embark on a scenic heritage drive.<br><br>
+                <strong>Sightseeing:</strong> Visit the magnificent <strong>Gateway of India</strong> facing the Arabian Sea, view the iconic Taj Mahal Palace Hotel, stroll through the vibrant lanes of Colaba Causeway, and photograph the grand Victorian-Gothic facade of CST Railway Terminus and Rajabai Clock Tower.<br><br>
+                <strong>Evening:</strong> Conclude the evening with a relaxing stroll along <strong>Marine Drive</strong> (Queen’s Necklace), enjoying sea breezes and sunset street delicacies at Girgaum Chowpatty before an exquisite buffet dinner at your hotel.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 2</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Elephanta Island & Film City</span>
+              </div>
+              <h3 class="day-title-text">UNESCO Elephanta Caves & Bollywood Studio Sets Experience</h3>
+              <p class="day-description-text">
+                <strong>Morning:</strong> Enjoy a wholesome breakfast at the hotel. Board a scenic catamaran ferry from Apollo Bunder over the Arabian Sea to <strong>Elephanta Island</strong>. Take the toy train and climb the ancient stone steps to explore the monumental 6th-century rock-cut Shiva sculptures, including the world-famous Trimurti.<br><br>
+                <strong>Afternoon:</strong> Return to the mainland and drive to Goregaon for your pre-arranged <strong>Bollywood Film City Guided Tour</strong>. Experience real movie sets, sound stages, post-production labs, and witness dance routines or live television shoot sequences.<br><br>
+                <strong>Late Afternoon:</strong> Scenic coastal drive over the Bandra-Worli Sea Link to Bandra Bandstand. View the celebrity mansions of Shah Rukh Khan (Mannat) and Salman Khan (Galaxy Apartments) with a seaside café halt.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 3</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Divine Blessings & Departure</span>
+              </div>
+              <h3 class="day-title-text">Siddhivinayak Temple Blessings, Shopping & Farewell Drop</h3>
+              <p class="day-description-text">
+                <strong>Morning:</strong> Start your final day with spiritual blessings at the auspicious 200-year-old <strong>Shree Siddhivinayak Temple</strong> in Prabhadevi. Our chauffeur coordinates convenient drop-off and pickup.<br><br>
+                <strong>Afternoon:</strong> Indulge in authentic Mumbai shopping for spices, textiles, and souvenirs at Crawford Market or chic fashion at Bandra Linking Road. Savour hot Mumbai street specialities like buttery Pav Bhaji, Vada Pav, and sweet Falooda.<br><br>
+                <strong>Evening:</strong> Check-out and seamless transfer to Mumbai Airport or Railway Station with cherished memories of the Maximum City.
+              </p>
+            </div>
+          </article>
+
+          <!-- Inclusions & Exclusions -->
+          <article class="pkg-card-box" id="inclusionsSection">
+            <h2 class="pkg-card-title"><i class="fa fa-list-check"></i> What's Included & Excluded</h2>
+
+            <div class="inc-exc-grid">
+              <div class="inc-box">
+                <div class="inc-box-title"><i class="fa fa-circle-check"></i> Inclusions</div>
+                <ul class="feature-check-list">
+                  <li><i class="fa fa-check"></i> 2 Nights accommodation in handpicked 3★ or 4★ hotel</li>
+                  <li><i class="fa fa-check"></i> Daily lavish buffet breakfast and multi-cuisine dinner</li>
+                  <li><i class="fa fa-check"></i> Private AC Sedan / SUV for transfers and sightseeing</li>
+                  <li><i class="fa fa-check"></i> Return ferry boat tickets to Elephanta Caves island</li>
+                  <li><i class="fa fa-check"></i> Bollywood Studio / Film City entry pass & guide assistance</li>
+                  <li><i class="fa fa-check"></i> All parking charges, driver allowances, toll taxes & fuel</li>
+                  <li><i class="fa fa-check"></i> Dedicated 24/7 on-tour customer support executive</li>
+                </ul>
+              </div>
+
+              <div class="exc-box">
+                <div class="exc-box-title"><i class="fa fa-circle-xmark"></i> Exclusions</div>
+                <ul class="feature-check-list">
+                  <li><i class="fa fa-xmark"></i> Airfare or Train tickets to and from Mumbai</li>
+                  <li><i class="fa fa-xmark"></i> Personal expenses like laundry, alcoholic beverages, phone calls</li>
+                  <li><i class="fa fa-xmark"></i> Camera / video fees at monuments and museums</li>
+                  <li><i class="fa fa-xmark"></i> Anything not explicitly mentioned under inclusions</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hotel & Standards -->
+          <article class="pkg-card-box">
+            <h2 class="pkg-card-title"><i class="fa fa-hotel"></i> Stay, Vehicle & Comfort Standards</h2>
+
+            <div class="standards-grid">
+              <div class="standard-card">
+                <div class="standard-card-icon"><i class="fa fa-bed"></i></div>
+                <div>
+                  <h5>Verified Luxury Stays</h5>
+                  <p>Properties rated 4.4+ on TripAdvisor with Wi-Fi, air conditioning, and top sanitary hygiene standards.</p>
+                </div>
+              </div>
+
+              <div class="standard-card">
+                <div class="standard-card-icon"><i class="fa fa-shield-halved"></i></div>
+                <div>
+                  <h5>Professional Chauffeurs</h5>
+                  <p>Courteous, verified commercial drivers well-versed with South Mumbai traffic routes and city heritage.</p>
+                </div>
+              </div>
+
+              <div class="standard-card">
+                <div class="standard-card-icon"><i class="fa fa-arrows-rotate"></i></div>
+                <div>
+                  <h5>100% Refund Guarantee</h5>
+                  <p>Full token refund on cancellation 15+ days prior to travel date. Free rescheduling up to 7 days before trip.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Frequently Asked Questions -->
+          <article class="pkg-card-box">
+            <h2 class="pkg-card-title"><i class="fa fa-circle-question"></i> Package FAQs</h2>
+
+            <div class="faq-accordion-wrap">
+              <div class="faq-item">
+                <button class="faq-question-btn">
+                  <span>Is airport / railway pickup included in this tour?</span>
+                  <i class="fa fa-plus"></i>
+                </button>
+                <div class="faq-answer-content">
+                  <p>Yes, round-trip private transfers from Mumbai Chhatrapati Shivaji Maharaj International Airport (T1 or T2) or CST / Mumbai Central railway stations are fully included.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question-btn">
+                  <span>Can we customize the hotel category or add an extra day?</span>
+                  <i class="fa fa-plus"></i>
+                </button>
+                <div class="faq-answer-content">
+                  <p>Absolutely! We can upgrade your stay to luxury sea-facing 5★ hotels (like Trident or Taj Lands End) and extend the tour to Lonavala, Khandala, or Alibaug upon request.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question-btn">
+                  <span>Is the Elephanta Caves ferry safe for families and children?</span>
+                  <i class="fa fa-plus"></i>
+                </button>
+                <div class="faq-answer-content">
+                  <p>Yes, all licensed tourist ferries operating from the Gateway of India follow strict maritime safety guidelines and provide life jackets on board. Ferries run regularly every 30 minutes.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </main>
+
+        <!-- Right Sticky Sidebar: Booking Form -->
+        <aside class="pkg-sticky-sidebar" id="packageBookingSidebar">
+          
+          <div class="sidebar-booking-card">
+            <div class="sidebar-card-header">
+              <h3>Plan This Tour</h3>
+              <p>Instant Quotation & WhatsApp Confirmation</p>
+            </div>
+
+            <div class="sidebar-card-body" id="packageBookingCardBody">
+              <div class="sidebar-price-banner">
+                <div>
+                  <span style="font-size:0.75rem; color:var(--text-muted); display:block;">Special Fare</span>
+                  <strong style="font-size:1.5rem; color:var(--primary); font-family:'Outfit',sans-serif;">₹9,499</strong>
+                  <span style="font-size:0.75rem; color:var(--text-muted);">/ person</span>
+                </div>
+                <span class="pkg-badge pkg-badge-bestseller" style="font-size:0.7rem;">30% Off</span>
+              </div>
+
+              <form id="packageBookingForm" data-pkg-title="Mumbai City Highlights & Bollywood Glamour Tour">
+                <div class="sidebar-booking-form">
+                  <div class="form-group-custom">
+                    <label for="fullName">Your Name *</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="e.g. Rajesh Sharma" required>
+                  </div>
+
+                  <div class="form-group-custom">
+                    <label for="phone">Phone / WhatsApp *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. +91 98765 43210" required>
+                  </div>
+
+                  <div class="form-group-custom">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. rajesh@example.com" required>
+                  </div>
+
+                  <div class="form-group-custom">
+                    <label for="travelDate">Estimated Travel Date *</label>
+                    <input type="date" id="travelDate" name="travelDate" required>
+                  </div>
+
+                  <div class="form-group-custom">
+                    <label for="travelers">Total Travelers *</label>
+                    <select id="travelers" name="travelers">
+                      <option value="2 Adults (Twin Sharing)">2 Adults (Couple / Twin Sharing)</option>
+                      <option value="Family (2 Adults + Children)">Family (2 Adults + 1 or 2 Kids)</option>
+                      <option value="Group (4 to 8 Persons)">Group (4 to 8 Persons)</option>
+                      <option value="Solo Traveler">Solo Traveler</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group-custom">
+                    <label for="hotelCategory">Hotel Preference</label>
+                    <select id="hotelCategory" name="hotelCategory">
+                      <option value="3-Star Deluxe">3-Star Deluxe</option>
+                      <option value="4-Star Premium">4-Star Premium</option>
+                      <option value="5-Star Sea Facing Luxury">5-Star Sea Facing Luxury</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group-custom">
+                    <label for="message">Custom Requests / Notes</label>
+                    <textarea id="message" name="message" rows="2" placeholder="Airport pickup timing, vegetarian food..."></textarea>
+                  </div>
+
+                  <button type="submit" class="btn-custom btn-secondary-custom" style="width:100%; margin-top:8px;">
+                    <i class="fa fa-paper-plane"></i> Get Free Quote on WhatsApp
+                  </button>
+                </div>
+              </form>
+
+              <div style="margin-top:16px; text-align:center;">
+                <span style="font-size:0.75rem; color:var(--text-muted);"><i class="fa fa-lock"></i> Your contact info is 100% private & secure.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Phone Assistance -->
+          <div class="sidebar-help-box">
+            <div style="width:48px; height:48px; border-radius:50%; background:var(--secondary-soft); color:var(--secondary); display:inline-flex; align-items:center; justify-content:center; font-size:1.3rem; margin-bottom:10px;">
+              <i class="fa fa-phone-volume"></i>
+            </div>
+            <h4>Need Custom Itinerary?</h4>
+            <p>Speak directly with our senior Mumbai destination specialist.</p>
+            <a href="tel:+919876543210" class="btn-custom btn-primary-custom" style="width:100%; margin-bottom:8px;">
+              <i class="fa fa-phone"></i> +91 98765 43210
+            </a>
+            <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20have%20questions%20about%20the%20Mumbai%20Highlights%20Tour." class="btn-custom" style="background:#25d366; color:#fff; width:100%;">
+              <i class="fa-brands fa-whatsapp"></i> Chat with Expert
+            </a>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Similar Recommended Packages -->
+  <section class="similar-packages-section">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+        <div>
+          <span style="color:var(--secondary); font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.5px;">More Explorations</span>
+          <h2 style="font-size:1.75rem; color:var(--dark);">You Might Also Like</h2>
+        </div>
+        <a href="index.html#packagesCatalogSection" class="btn-custom btn-outline-custom">View All 8 Packages</a>
+      </div>
+
+      <div class="similar-grid">
+        <article class="similar-card">
+          <div class="similar-card-img">
+            <img src="https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&w=600&q=80" alt="Mumbai Express Heritage">
+            <span class="badge-tag" style="position:absolute; top:12px; left:12px; background:var(--secondary); color:#fff; font-size:0.75rem; padding:4px 10px; border-radius:12px;">Weekend Special</span>
+          </div>
+          <div class="similar-card-body">
+            <div>
+              <span style="font-size:0.8rem; color:var(--text-muted);"><i class="fa fa-clock"></i> 01 Night / 02 Days</span>
+              <h3 class="similar-card-title">2 Days Express Mumbai Heritage Tour</h3>
+              <p style="font-size:0.85rem; color:#64748b;">Curated short getaway covering Gateway of India, Elephanta & Marine Drive.</p>
+            </div>
+            <div class="similar-card-footer">
+              <div>
+                <span style="font-size:0.75rem; color:var(--text-muted); display:block;">Starting From</span>
+                <strong style="color:var(--primary); font-size:1.15rem;">₹6,999</strong>
+              </div>
+              <a href="mumbai-express-heritage-tour.html" class="btn-custom btn-primary-custom" style="padding:6px 14px; font-size:0.8rem;">View Tour</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="similar-card">
+          <div class="similar-card-img">
+            <img src="https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=600&q=80" alt="Shirdi Sai Darshan">
+            <span class="badge-tag" style="position:absolute; top:12px; left:12px; background:var(--secondary); color:#fff; font-size:0.75rem; padding:4px 10px; border-radius:12px;">Pilgrimage Favorite</span>
+          </div>
+          <div class="similar-card-body">
+            <div>
+              <span style="font-size:0.8rem; color:var(--text-muted);"><i class="fa fa-clock"></i> 04 Nights / 05 Days</span>
+              <h3 class="similar-card-title">Mumbai, Shirdi Sai & Trimbakeshwar Yatra</h3>
+              <p style="font-size:0.85rem; color:#64748b;">Divine circuit covering Shirdi Sai Samadhi, Trimbakeshwar Jyotirlinga & Nashik.</p>
+            </div>
+            <div class="similar-card-footer">
+              <div>
+                <span style="font-size:0.75rem; color:var(--text-muted); display:block;">Starting From</span>
+                <strong style="color:var(--primary); font-size:1.15rem;">₹16,800</strong>
+              </div>
+              <a href="mumbai-shirdi-trimbakeshwar-yatra.html" class="btn-custom btn-primary-custom" style="padding:6px 14px; font-size:0.8rem;">View Tour</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="similar-card">
+          <div class="similar-card-img">
+            <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=80" alt="Lonavala Khandala Escape">
+            <span class="badge-tag" style="position:absolute; top:12px; left:12px; background:var(--accent-teal); color:#fff; font-size:0.75rem; padding:4px 10px; border-radius:12px;">Trending Getaway</span>
+          </div>
+          <div class="similar-card-body">
+            <div>
+              <span style="font-size:0.8rem; color:var(--text-muted);"><i class="fa fa-clock"></i> 03 Nights / 04 Days</span>
+              <h3 class="similar-card-title">Mumbai & Lonavala Khandala Scenic Hill Escape</h3>
+              <p style="font-size:0.85rem; color:#64748b;">Waterfalls, misty Western Ghats, Karla Caves and Tiger's Leap view.</p>
+            </div>
+            <div class="similar-card-footer">
+              <div>
+                <span style="font-size:0.75rem; color:var(--text-muted); display:block;">Starting From</span>
+                <strong style="color:var(--primary); font-size:1.15rem;">₹13,999</strong>
+              </div>
+              <a href="mumbai-lonavala-khandala-escape.html" class="btn-custom btn-primary-custom" style="padding:6px 14px; font-size:0.8rem;">View Tour</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-col">
+          <div class="brand-titles" style="margin-bottom:14px;">
+            <span class="brand-title-main" style="color:#ffffff;">DEV TOUR <span style="color:var(--secondary)">& TRAVELS</span></span>
+            <span class="brand-tagline" style="color:#94a3b8;">Crafting Extraordinary Journeys</span>
+          </div>
+          <p style="color:#94a3b8; font-size:0.85rem; line-height:1.6; margin-bottom:16px;">
+            Premier Indian travel management company specializing in tailor-made holiday packages, pilgrimage tours, and weekend hill getaways.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Tours in India</h4>
+          <ul class="footer-nav-list">
+            <li><a href="mumbai-highlights-bollywood-tour.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Mumbai Highlights Tour</a></li>
+            <li><a href="mumbai-express-heritage-tour.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Express Heritage Tour</a></li>
+            <li><a href="mumbai-shirdi-trimbakeshwar-yatra.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Shirdi & Nashik Yatra</a></li>
+            <li><a href="ashtavinayak-ganesha-darshan.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Ashtavinayak Darshan</a></li>
+            <li><a href="mumbai-to-goa-coastal-odyssey.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Mumbai to Goa Odyssey</a></li>
+            <li><a href="golden-triangle-mumbai-express.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Golden Triangle Circuit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html#faqSection">Frequently Asked Questions</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollToBookingForm()">Custom Itinerary Request</a></li>
+            <li><a href="index.html#contactSection">Contact Head Office</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="footer-contact-items">
+            <li><i class="fa fa-phone"></i> +91 98765 43210 / +91 99100 49132</li>
+            <li><i class="fa fa-envelope"></i> info@devtourandtravels.com</li>
+            <li><i class="fa fa-location-dot"></i> Nariman Point, Mumbai - 400021</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>© 2026 <strong>Dev Tour and Travels</strong>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Action Bar -->
+  <div class="mobile-bottom-quickbar">
+    <div class="mobile-bottom-grid">
+      <a href="tel:+919876543210" class="mobile-bottom-item call">
+        <i class="fa fa-phone"></i>
+        <span>Call Now</span>
+      </a>
+      <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20want%20to%20book%20Mumbai%20City%20Highlights%20Tour." target="_blank" class="mobile-bottom-item whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="javascript:void(0)" onclick="scrollToBookingForm()" class="mobile-bottom-item enquiry">
+        <i class="fa fa-paper-plane"></i>
+        <span>Book ₹9,499</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/package-page.js"></script>
+</body>
+</html>

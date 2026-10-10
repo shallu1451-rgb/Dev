@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Triangle with Mumbai Express Tour (8 Days) | Dev Tour and Travels</title>
+  <meta name="description" content="Book 8 Days Golden Triangle with Mumbai Tour starting @ ₹31,999. Delhi, Taj Mahal in Agra, Jaipur Pink City, and Mumbai. Includes domestic flight Jaipur to Mumbai, 4★ hotels and private vehicle.">
+  <meta name="keywords" content="Golden Triangle Mumbai tour, Delhi Agra Jaipur Mumbai package, Taj Mahal tour, Amber Fort, Mumbai sightseeing">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/package-detail.css">
+</head>
+<body>
+
+  <!-- Top Notification & Contact Bar -->
+  <div class="top-header-bar">
+    <div class="container">
+      <div class="top-bar-flex">
+        <div class="top-contact-info">
+          <span><i class="fa fa-clock"></i> Mon to Sat: 09:30 AM – 07:00 PM</span>
+          <a href="tel:+919876543210"><i class="fa fa-phone"></i> +91 98765 43210</a>
+          <a href="mailto:info@devtourandtravels.com"><i class="fa fa-envelope"></i> info@devtourandtravels.com</a>
+          <span class="top-badge-special"><i class="fa fa-plane"></i> Domestic Flight Included (Jaipur to Mumbai)</span>
+        </div>
+        <div class="top-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Navbar -->
+  <header class="site-navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo-wrap">
+        <div class="brand-icon"><i class="fa fa-plane-departure"></i></div>
+        <div class="brand-titles">
+          <span class="brand-title-main">DEV TOUR <span>& TRAVELS</span></span>
+          <span class="brand-tagline">Crafting Extraordinary Journeys</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links-desktop">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="index.html#packagesCatalogSection" class="nav-link active">All Packages</a></li>
+          <li class="nav-item"><a href="index.html#mumbaiHighlightsSection" class="nav-link">Mumbai Sights</a></li>
+          <li class="nav-item"><a href="index.html#faqSection" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="index.html#contactSection" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar-action-btns">
+        <a href="index.html#packagesCatalogSection" class="btn-custom btn-outline-custom" style="padding: 7px 16px; font-size: 0.85rem;">
+          <i class="fa fa-arrow-left"></i> All Packages
+        </a>
+        <button class="btn-custom btn-secondary-custom" onclick="scrollToBookingForm()">
+          <i class="fa fa-calendar-check"></i> Book Now
+        </button>
+      </div>
+
+      <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; padding-bottom:12px; border-bottom:1px solid #e2e8f0;">
+      <div class="brand-titles">
+        <span class="brand-title-main" style="font-size:1.15rem;">DEV TOUR <span>& TRAVELS</span></span>
+      </div>
+      <button id="drawerCloseBtn" style="background:none; border:none; font-size:1.2rem; color:var(--dark); cursor:pointer;">
+        <i class="fa fa-xmark"></i>
+      </button>
+    </div>
+    <ul style="list-style:none; display:flex; flex-direction:column; gap:14px; font-weight:600;">
+      <li><a href="index.html" style="color:var(--primary);"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="index.html#packagesCatalogSection"><i class="fa fa-map-location-dot"></i> View All Packages</a></li>
+      <li><a href="#itinerarySection"><i class="fa fa-calendar-days"></i> Itinerary</a></li>
+      <li><a href="#inclusionsSection"><i class="fa fa-circle-check"></i> Inclusions</a></li>
+      <li><a href="javascript:void(0)" onclick="scrollToBookingForm()"><i class="fa fa-paper-plane"></i> Book This Tour</a></li>
+    </ul>
+    <div style="margin-top:28px; padding-top:20px; border-top:1px solid #e2e8f0;">
+      <a href="tel:+919876543210" class="btn-custom btn-primary-custom" style="width:100%; margin-bottom:10px;">
+        <i class="fa fa-phone"></i> Call +91 98765 43210
+      </a>
+      <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20am%20interested%20in%20Golden%20Triangle%20Mumbai%20Tour." class="btn-custom" style="background:#25d366; color:#fff; width:100%; display:block; text-align:center;">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <!-- Breadcrumbs Bar -->
+  <div class="breadcrumbs-bar">
+    <div class="container">
+      <ul class="breadcrumbs-list">
+        <li><a href="index.html">Home</a></li>
+        <li><i class="fa fa-chevron-right" style="font-size:0.65rem;"></i></li>
+        <li><a href="index.html#packagesCatalogSection">Heritage Circuits</a></li>
+        <li><i class="fa fa-chevron-right" style="font-size:0.65rem;"></i></li>
+        <li class="current">Golden Triangle with Mumbai Express Tour</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Package Hero Section -->
+  <section class="pkg-hero" style="--hero-bg-img: url('https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1600&q=80')">
+    <div class="container">
+      <div class="pkg-hero-grid">
+        <div>
+          <div class="pkg-hero-badges">
+            <span class="pkg-badge pkg-badge-bestseller"><i class="fa fa-landmark"></i> Heritage Classic</span>
+            <span class="pkg-badge pkg-badge-duration"><i class="fa fa-clock"></i> 07 Nights / 08 Days</span>
+            <span class="pkg-badge pkg-badge-regular"><i class="fa fa-plane"></i> Flight Included</span>
+          </div>
+
+          <h1 class="pkg-hero-title">Golden Triangle with Mumbai Express Tour</h1>
+
+          <div class="pkg-hero-meta">
+            <span class="rating-box"><i class="fa fa-star"></i> 4.92 / 5.0</span>
+            <span><i class="fa fa-users"></i> 160 Travelers Hosted</span>
+            <span><i class="fa fa-location-dot"></i> Delhi » Agra » Jaipur » Mumbai</span>
+          </div>
+
+          <div class="pkg-hero-route">
+            <i class="fa fa-route" style="color:var(--secondary); font-size:1.1rem;"></i>
+            <span><strong>Route:</strong> Delhi <span class="route-arrow">»</span> Agra (Taj Mahal) <span class="route-arrow">»</span> Jaipur (Amber Fort) <span class="route-arrow">»</span> Flight to Mumbai <span class="route-arrow">»</span> Marine Drive</span>
+          </div>
+        </div>
+
+        <!-- Hero Price Card (Desktop) -->
+        <div class="pkg-hero-price-card">
+          <span class="discount-pill"><i class="fa fa-tags"></i> 24% Savings</span>
+          <div class="strike-price">₹42,000</div>
+          <div class="final-price">₹31,999</div>
+          <span class="price-unit">per person (Domestic Flight Included)</span>
+
+          <button class="btn-custom btn-secondary-custom" style="width:100%; margin-bottom:10px;" onclick="scrollToBookingForm()">
+            <i class="fa fa-paper-plane"></i> Book / Send Inquiry
+          </button>
+          <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20am%20interested%20in%20Golden%20Triangle%20Mumbai%20Tour%20(pkg-6)." target="_blank" class="btn-custom" style="background:#25d366; color:#fff; width:100%; font-size:0.875rem;">
+            <i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Highlights Bar -->
+  <div class="pkg-highlights-bar">
+    <div class="container">
+      <div class="pkg-highlights-flex">
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-plane"></i></span>
+          <div>
+            <div>Flight Included</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Jaipur to Mumbai Air Ticket</small>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-landmark-dome"></i></span>
+          <div>
+            <div>Taj Mahal Sunrise</div>
+            <small style="color:var(--text-muted); font-weight:normal;">UNESCO Wonder Guided Tour</small>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-hotel"></i></span>
+          <div>
+            <div>7 Nights 4★ Stays</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Delhi, Agra, Jaipur & Mumbai</small>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-car"></i></span>
+          <div>
+            <div>Chauffeured Cab</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Expressway AC Vehicle</small>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-shield-halved"></i></span>
+          <div>
+            <div>Dedicated Tour Guide</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Certified Historians</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Layout Section -->
+  <section class="pkg-content-section">
+    <div class="container">
+      <div class="pkg-layout-grid">
+        
+        <!-- Left Main Details Column -->
+        <main class="pkg-main-details">
+          
+          <article class="pkg-card-box">
+            <h2 class="pkg-card-title"><i class="fa fa-compass"></i> Grand Indian Heritage Circuit</h2>
+            <p class="pkg-overview-text">
+              The definitive Indian travel experience combining northern Mughal empire majesty and Rajasthani royalty with western India’s coastal metropolis! The <strong>Golden Triangle with Mumbai Express Tour</strong> seamlessly connects Delhi, Agra, Jaipur, and Mumbai in an 8-day luxurious odyssey.
+            </p>
+            <p class="pkg-overview-text">
+              Stand mesmerized before the pearlescent marble dome of the Taj Mahal at sunrise, ride to the hilltops of Amber Fort in Jaipur, explore Qutub Minar and India Gate in the nation's capital, and take a quick flight to Mumbai to experience the Arabian Sea breeze along Marine Drive and Bollywood glamour.
+            </p>
+
+            <div class="pkg-gallery-grid">
+              <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80" alt="Taj Mahal Agra" class="pkg-gallery-main">
+              <div class="pkg-gallery-thumb-wrap">
+                <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=400&q=80" alt="Jaipur Palace" class="pkg-gallery-thumb">
+                <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=400&q=80" alt="Mumbai Gateway" class="pkg-gallery-thumb">
+              </div>
+            </div>
+          </article>
+
+          <!-- Day-by-Day Itinerary -->
+          <article class="pkg-card-box" id="itinerarySection">
+            <h2 class="pkg-card-title"><i class="fa fa-calendar-days"></i> Itinerary Schedule</h2>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 1</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Delhi Arrival</span>
+              </div>
+              <h3 class="day-title-text">Welcome to Capital City Delhi & Monument Tour</h3>
+              <p class="day-description-text">
+                Arrival in Delhi. Meet our chauffeur and transfer to 4★ hotel. Afternoon city tour covering India Gate, UNESCO Qutub Minar, Lotus Temple, and drive past Rashtrapati Bhavan. Overnight in Delhi.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 2</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Delhi to Agra (210 km / 3.5 hrs)</span>
+              </div>
+              <h3 class="day-title-text">Yamuna Expressway Drive, Agra Fort & Sunset at Mehtab Bagh</h3>
+              <p class="day-description-text">
+                Drive via Yamuna Expressway to Agra. Check-in to hotel. Tour the red sandstone ramparts of UNESCO Agra Fort. In the evening, witness romantic sunset reflection of Taj Mahal across the Yamuna from Mehtab Bagh gardens. Overnight in Agra.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 3</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Agra to Jaipur via Fatehpur Sikri (240 km)</span>
+              </div>
+              <h3 class="day-title-text">Sunrise at Taj Mahal & En-route Fatehpur Sikri Ghost City</h3>
+              <p class="day-description-text">
+                Early morning sunrise visit to the breathtaking <strong>Taj Mahal</strong> with private certified historian guide. Return for breakfast. Drive to Jaipur stopping at Mughal Emperor Akbar’s abandoned red stone capital Fatehpur Sikri and Buland Darwaza. Arrive in the Pink City Jaipur.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 4</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Jaipur Sightseeing</span>
+              </div>
+              <h3 class="day-title-text">Amber Fort, City Palace, Jantar Mantar & Hawa Mahal</h3>
+              <p class="day-description-text">
+                Ascend to magnificent <strong>Amber Fort</strong> by jeep/elephant ride. Visit Sheesh Mahal (hall of mirrors), City Palace royal museum, UNESCO Jantar Mantar astronomical observatory, and photo halt before honeycombed Hawa Mahal (Palace of Winds).
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 5</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Flight to Mumbai (1 hr 45 min)</span>
+              </div>
+              <h3 class="day-title-text">Flight to Mumbai & Marine Drive Sunset Promenade</h3>
+              <p class="day-description-text">
+                Transfer to Jaipur Airport for your included domestic flight to Mumbai. Greeting in Mumbai and transfer to 4★ hotel. Evening stroll along Marine Drive (Queen's Necklace) with sea breezes.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 6</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Mumbai Heritage & Elephanta</span>
+              </div>
+              <h3 class="day-title-text">Gateway of India, Elephanta Rock Caves & Colaba Walk</h3>
+              <p class="day-description-text">
+                Full-day South Mumbai heritage excursion: Gateway of India, ferry to Elephanta Caves island, Victoria Terminus (CST), and heritage walk through Fort & Kala Ghoda arts district.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 7</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Mumbai Culture & Bollywood</span>
+              </div>
+              <h3 class="day-title-text">Siddhivinayak Temple, Bandra Coast & Bollywood Tour</h3>
+              <p class="day-description-text">
+                Visit Siddhivinayak Ganapati Temple, drive past Dhobi Ghat and across Bandra-Worli Sea Link to Bandra Bandstand and Juhu beach.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 8</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Mumbai Departure</span>
+              </div>
+              <h3 class="day-title-text">Farewell Drop at Mumbai International Airport</h3>
+              <p class="day-description-text">
+                Breakfast at hotel and seamless transfer to Chhatrapati Shivaji Maharaj International Airport for your flight back home.
+              </p>
+            </div>
+          </article>
+
+          <!-- Inclusions & Exclusions -->
+          <article class="pkg-card-box" id="inclusionsSection">
+            <h2 class="pkg-card-title"><i class="fa fa-list-check"></i> What's Included & Excluded</h2>
+            <div class="inc-exc-grid">
+              <div class="inc-box">
+                <div class="inc-box-title"><i class="fa fa-circle-check"></i> Inclusions</div>
+                <ul class="feature-check-list">
+                  <li><i class="fa fa-check"></i> Domestic airfare ticket from Jaipur to Mumbai included</li>
+                  <li><i class="fa fa-check"></i> 7 Nights stay in 4★ premium hotels (1N Delhi, 1N Agra, 2N Jaipur, 3N Mumbai)</li>
+                  <li><i class="fa fa-check"></i> Daily buffet breakfast and royal dinners</li>
+                  <li><i class="fa fa-check"></i> Private AC Sedan / Crysta for all interstate transfers & sightseeing</li>
+                  <li><i class="fa fa-check"></i> Approved government guides at Taj Mahal & Amber Fort</li>
+                  <li><i class="fa fa-check"></i> All expressway tolls, state permits, and driver charges</li>
+                </ul>
+              </div>
+
+              <div class="exc-box">
+                <div class="exc-box-title"><i class="fa fa-circle-xmark"></i> Exclusions</div>
+                <ul class="feature-check-list">
+                  <li><i class="fa fa-xmark"></i> International flights / home city arrivals</li>
+                  <li><i class="fa fa-xmark"></i> Monument entry ticket fees (can be added on request)</li>
+                  <li><i class="fa fa-xmark"></i> Daily lunches & personal expenses</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </main>
+
+        <!-- Right Sticky Sidebar -->
+        <aside class="pkg-sticky-sidebar" id="packageBookingSidebar">
+          <div class="sidebar-booking-card">
+            <div class="sidebar-card-header">
+              <h3>Book Golden Triangle</h3>
+              <p>Flights + 4★ Hotels Included</p>
+            </div>
+
+            <div class="sidebar-card-body" id="packageBookingCardBody">
+              <div class="sidebar-price-banner">
+                <div>
+                  <span style="font-size:0.75rem; color:var(--text-muted); display:block;">Starting Price</span>
+                  <strong style="font-size:1.5rem; color:var(--primary); font-family:'Outfit',sans-serif;">₹31,999</strong>
+                  <span style="font-size:0.75rem; color:var(--text-muted);">/ person</span>
+                </div>
+                <span class="pkg-badge pkg-badge-bestseller" style="font-size:0.7rem;">Save ₹10,001</span>
+              </div>
+
+              <form id="packageBookingForm" data-pkg-title="Golden Triangle with Mumbai Express Tour">
+                <div class="sidebar-booking-form">
+                  <div class="form-group-custom">
+                    <label for="fullName">Your Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="e.g. Arun Mehta" required>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="phone">Phone / WhatsApp *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. +91 98765 43210" required>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. arun@example.com" required>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="travelDate">Tour Start Date *</label>
+                    <input type="date" id="travelDate" name="travelDate" required>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="travelers">Travelers *</label>
+                    <select id="travelers" name="travelers">
+                      <option value="2 Adults (Twin Sharing)">2 Adults (Couple / Twin Sharing)</option>
+                      <option value="Family (3 to 5 Persons)">Family (3 to 5 Persons)</option>
+                      <option value="Group (6+ Persons)">Group (6+ Persons)</option>
+                      <option value="Solo Traveler">Solo Traveler</option>
+                    </select>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="hotelCategory">Hotel Tier</label>
+                    <select id="hotelCategory" name="hotelCategory">
+                      <option value="4-Star Premium Deluxe">4-Star Premium Deluxe</option>
+                      <option value="5-Star Luxury Heritage Palaces">5-Star Luxury Heritage Palaces</option>
+                    </select>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="message">Custom Requirements</label>
+                    <textarea id="message" name="message" rows="2" placeholder="Mention language guide preference or dietary needs..."></textarea>
+                  </div>
+                  <button type="submit" class="btn-custom btn-secondary-custom" style="width:100%; margin-top:8px;">
+                    <i class="fa fa-paper-plane"></i> Get Free Quote on WhatsApp
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="sidebar-help-box">
+            <div style="width:48px; height:48px; border-radius:50%; background:var(--secondary-soft); color:var(--secondary); display:inline-flex; align-items:center; justify-content:center; font-size:1.3rem; margin-bottom:10px;">
+              <i class="fa fa-phone-volume"></i>
+            </div>
+            <h4>Heritage Tour Planner</h4>
+            <p>Customize itinerary days and hotels with our expert.</p>
+            <a href="tel:+919876543210" class="btn-custom btn-primary-custom" style="width:100%; margin-bottom:8px;">
+              <i class="fa fa-phone"></i> +91 98765 43210
+            </a>
+            <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20have%20inquiry%20for%20Golden%20Triangle%20Mumbai%20Tour." class="btn-custom" style="background:#25d366; color:#fff; width:100%;">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-col">
+          <div class="brand-titles" style="margin-bottom:14px;">
+            <span class="brand-title-main" style="color:#ffffff;">DEV TOUR <span style="color:var(--secondary)">& TRAVELS</span></span>
+            <span class="brand-tagline" style="color:#94a3b8;">Crafting Extraordinary Journeys</span>
+          </div>
+          <p style="color:#94a3b8; font-size:0.85rem; line-height:1.6;">
+            India’s trusted luxury travel agency specializing in Golden Triangle circuits, Mumbai packages, and royal palace vacations.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Popular Tours in India</h4>
+          <ul class="footer-nav-list">
+            <li><a href="golden-triangle-mumbai-express.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Golden Triangle Circuit</a></li>
+            <li><a href="royal-rajasthan-grand-expedition.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Royal Rajasthan Expedition</a></li>
+            <li><a href="mumbai-highlights-bollywood-tour.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Mumbai Highlights Tour</a></li>
+            <li><a href="mumbai-to-goa-coastal-odyssey.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Mumbai to Goa Odyssey</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html#faqSection">Frequently Asked Questions</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollToBookingForm()">Custom Itinerary Request</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="footer-contact-items">
+            <li><i class="fa fa-phone"></i> +91 98765 43210 / +91 99100 49132</li>
+            <li><i class="fa fa-envelope"></i> info@devtourandtravels.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <p>© 2026 <strong>Dev Tour and Travels</strong>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Action Bar -->
+  <div class="mobile-bottom-quickbar">
+    <div class="mobile-bottom-grid">
+      <a href="tel:+919876543210" class="mobile-bottom-item call"><i class="fa fa-phone"></i><span>Call</span></a>
+      <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20want%20to%20book%20Golden%20Triangle%20Mumbai%20Tour." target="_blank" class="mobile-bottom-item whatsapp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+      <a href="javascript:void(0)" onclick="scrollToBookingForm()" class="mobile-bottom-item enquiry"><i class="fa fa-paper-plane"></i><span>Book ₹31,999</span></a>
+    </div>
+  </div>
+
+  <script src="js/package-page.js"></script>
+</body>
+</html>

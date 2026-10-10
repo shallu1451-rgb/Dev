@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashtavinayak 8 Ganesha Darshan from Mumbai (3 Days) | Dev Tour and Travels</title>
+  <meta name="description" content="Book 3 Days Ashtavinayak 8 Ganesha Darshan Yatra from Mumbai @ ₹11,200. Covers Mayureshwar, Siddhivinayak, Ballaleshwar, Varadvinayak, Chintamani, Girijatmaj, Vighneshwar & Mahaganpati. Dedicated AC vehicle and hotel stays.">
+  <meta name="keywords" content="Ashtavinayak Yatra from Mumbai, 8 Ganpati Darshan, Mayureshwar Morgaon, Ballaleshwar Pali, Lenyadri Ganpati, Dev Tour and Travels">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/package-detail.css">
+</head>
+<body>
+
+  <!-- Top Notification & Contact Bar -->
+  <div class="top-header-bar">
+    <div class="container">
+      <div class="top-bar-flex">
+        <div class="top-contact-info">
+          <span><i class="fa fa-clock"></i> Mon to Sat: 09:30 AM – 07:00 PM</span>
+          <a href="tel:+919876543210"><i class="fa fa-phone"></i> +91 98765 43210</a>
+          <a href="mailto:info@devtourandtravels.com"><i class="fa fa-envelope"></i> info@devtourandtravels.com</a>
+          <span class="top-badge-special"><i class="fa fa-om"></i> Complete 8 Ganpati Swayambhu Circuit</span>
+        </div>
+        <div class="top-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Navbar -->
+  <header class="site-navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo-wrap">
+        <div class="brand-icon"><i class="fa fa-plane-departure"></i></div>
+        <div class="brand-titles">
+          <span class="brand-title-main">DEV TOUR <span>& TRAVELS</span></span>
+          <span class="brand-tagline">Crafting Extraordinary Journeys</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links-desktop">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="index.html#packagesCatalogSection" class="nav-link active">All Packages</a></li>
+          <li class="nav-item"><a href="index.html#mumbaiHighlightsSection" class="nav-link">Mumbai Sights</a></li>
+          <li class="nav-item"><a href="index.html#faqSection" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="index.html#contactSection" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar-action-btns">
+        <a href="index.html#packagesCatalogSection" class="btn-custom btn-outline-custom" style="padding: 7px 16px; font-size: 0.85rem;">
+          <i class="fa fa-arrow-left"></i> All Packages
+        </a>
+        <button class="btn-custom btn-secondary-custom" onclick="scrollToBookingForm()">
+          <i class="fa fa-calendar-check"></i> Book Now
+        </button>
+      </div>
+
+      <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; padding-bottom:12px; border-bottom:1px solid #e2e8f0;">
+      <div class="brand-titles">
+        <span class="brand-title-main" style="font-size:1.15rem;">DEV TOUR <span>& TRAVELS</span></span>
+      </div>
+      <button id="drawerCloseBtn" style="background:none; border:none; font-size:1.2rem; color:var(--dark); cursor:pointer;">
+        <i class="fa fa-xmark"></i>
+      </button>
+    </div>
+    <ul style="list-style:none; display:flex; flex-direction:column; gap:14px; font-weight:600;">
+      <li><a href="index.html" style="color:var(--primary);"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="index.html#packagesCatalogSection"><i class="fa fa-map-location-dot"></i> View All Packages</a></li>
+      <li><a href="#itinerarySection"><i class="fa fa-calendar-days"></i> Itinerary</a></li>
+      <li><a href="#inclusionsSection"><i class="fa fa-circle-check"></i> Inclusions</a></li>
+      <li><a href="javascript:void(0)" onclick="scrollToBookingForm()"><i class="fa fa-paper-plane"></i> Book This Tour</a></li>
+    </ul>
+    <div style="margin-top:28px; padding-top:20px; border-top:1px solid #e2e8f0;">
+      <a href="tel:+919876543210" class="btn-custom btn-primary-custom" style="width:100%; margin-bottom:10px;">
+        <i class="fa fa-phone"></i> Call +91 98765 43210
+      </a>
+      <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20am%20interested%20in%20Ashtavinayak%20Yatra." class="btn-custom" style="background:#25d366; color:#fff; width:100%; display:block; text-align:center;">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <!-- Breadcrumbs Bar -->
+  <div class="breadcrumbs-bar">
+    <div class="container">
+      <ul class="breadcrumbs-list">
+        <li><a href="index.html">Home</a></li>
+        <li><i class="fa fa-chevron-right" style="font-size:0.65rem;"></i></li>
+        <li><a href="index.html#packagesCatalogSection">Pilgrimage Circuits</a></li>
+        <li><i class="fa fa-chevron-right" style="font-size:0.65rem;"></i></li>
+        <li class="current">Ashtavinayak 8 Ganesha Darshan from Mumbai</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Package Hero Section -->
+  <section class="pkg-hero" style="--hero-bg-img: url('https://images.unsplash.com/photo-1542456459-ae5984b1f3f6?auto=format&fit=crop&w=1600&q=80')">
+    <div class="container">
+      <div class="pkg-hero-grid">
+        <div>
+          <div class="pkg-hero-badges">
+            <span class="pkg-badge pkg-badge-bestseller"><i class="fa fa-om"></i> Sacred Pilgrimage</span>
+            <span class="pkg-badge pkg-badge-duration"><i class="fa fa-clock"></i> 02 Nights / 03 Days</span>
+            <span class="pkg-badge pkg-badge-regular"><i class="fa fa-star"></i> 8 Swayambhu Ganpati</span>
+          </div>
+
+          <h1 class="pkg-hero-title">Ashtavinayak 8 Ganesha Darshan from Mumbai</h1>
+
+          <div class="pkg-hero-meta">
+            <span class="rating-box"><i class="fa fa-star"></i> 4.96 / 5.0</span>
+            <span><i class="fa fa-users"></i> 310 Devotee Groups</span>
+            <span><i class="fa fa-location-dot"></i> Maharashtra Sacred Belt</span>
+          </div>
+
+          <div class="pkg-hero-route">
+            <i class="fa fa-route" style="color:var(--secondary); font-size:1.1rem;"></i>
+            <span><strong>Circuit:</strong> Mahad <span class="route-arrow">»</span> Pali <span class="route-arrow">»</span> Theur <span class="route-arrow">»</span> Siddhatek <span class="route-arrow">»</span> Morgaon <span class="route-arrow">»</span> Lenyadri <span class="route-arrow">»</span> Ozar <span class="route-arrow">»</span> Ranjangaon</span>
+          </div>
+        </div>
+
+        <!-- Hero Price Card (Desktop) -->
+        <div class="pkg-hero-price-card">
+          <span class="discount-pill"><i class="fa fa-tags"></i> 28% Special Yatra Fare</span>
+          <div class="strike-price">₹15,500</div>
+          <div class="final-price">₹11,200</div>
+          <span class="price-unit">per person (Pure Veg Meals Included)</span>
+
+          <button class="btn-custom btn-secondary-custom" style="width:100%; margin-bottom:10px;" onclick="scrollToBookingForm()">
+            <i class="fa fa-paper-plane"></i> Book / Send Inquiry
+          </button>
+          <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20am%20interested%20in%20Ashtavinayak%20Yatra%20(pkg-7)." target="_blank" class="btn-custom" style="background:#25d366; color:#fff; width:100%; font-size:0.875rem;">
+            <i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Highlights Bar -->
+  <div class="pkg-highlights-bar">
+    <div class="container">
+      <div class="pkg-highlights-flex">
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-om"></i></span>
+          <div>
+            <div>All 8 Temples Covered</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Traditional Scriptural Order</small>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-hotel"></i></span>
+          <div>
+            <div>2 Nights Clean Stay</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Pune / Junnar Circuit</small>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-utensils"></i></span>
+          <div>
+            <div>Pure Veg Meals</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Breakfast & Dinner Included</small>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-car"></i></span>
+          <div>
+            <div>Dedicated AC Cab</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Experienced Circuit Driver</small>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fa fa-hands-praying"></i></span>
+          <div>
+            <div>Senior Friendly Pace</div>
+            <small style="color:var(--text-muted); font-weight:normal;">Comfort Stops on Highway</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Layout Section -->
+  <section class="pkg-content-section">
+    <div class="container">
+      <div class="pkg-layout-grid">
+        
+        <!-- Left Main Details Column -->
+        <main class="pkg-main-details">
+          
+          <article class="pkg-card-box">
+            <h2 class="pkg-card-title"><i class="fa fa-compass"></i> Divine Yatra Overview</h2>
+            <p class="pkg-overview-text">
+              The <strong>Ashtavinayak Yatra</strong> ("Eight Ganeshas") is Maharashtra's most celebrated sacred pilgrimage. Unlike standard temples, each of these eight murtis is <em>Swayambhu</em> (self-originated rock manifestation), worshipped in peaceful rural valleys, hill caves, and river confluences across Pune, Raigad, and Ahmednagar districts.
+            </p>
+            <p class="pkg-overview-text">
+              Starting and concluding in Mumbai, Dev Tour and Travels ensures devotees travel with seamless comfort in clean private AC vehicles, stay at hygienic family-friendly hotels, and enjoy delicious satvik vegetarian meals throughout the 3-day spiritual odyssey.
+            </p>
+
+            <div class="pkg-gallery-grid">
+              <img src="https://images.unsplash.com/photo-1542456459-ae5984b1f3f6?auto=format&fit=crop&w=800&q=80" alt="Sacred Idol Sanctum" class="pkg-gallery-main">
+              <div class="pkg-gallery-thumb-wrap">
+                <img src="https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=400&q=80" alt="Pilgrimage Atmosphere" class="pkg-gallery-thumb">
+                <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=400&q=80" alt="Western Ghats Scenery" class="pkg-gallery-thumb">
+              </div>
+            </div>
+          </article>
+
+          <!-- Day-by-Day Itinerary -->
+          <article class="pkg-card-box" id="itinerarySection">
+            <h2 class="pkg-card-title"><i class="fa fa-calendar-days"></i> Itinerary: 8 Ganesha Circuit</h2>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 1</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Mumbai » Mahad » Pali » Pune</span>
+              </div>
+              <h3 class="day-title-text">Varadvinayak (Mahad) & Ballaleshwar (Pali)</h3>
+              <p class="day-description-text">
+                Early morning pickup from Mumbai. Drive towards Raigad district to visit <strong>Varadvinayak</strong> at Mahad, where an oil lamp (Nandadeep) has been burning continuously since 1892. Proceed to <strong>Ballaleshwar</strong> at Pali, the only Ganesha named after his devotee (Ballal) with a stone temple facing sunrise. Drive to Pune/Chakan for hotel check-in and pure vegetarian dinner.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 2</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Theur » Siddhatek » Morgaon</span>
+              </div>
+              <h3 class="day-title-text">Chintamani (Theur), Siddhivinayak (Siddhatek) & Mayureshwar (Morgaon)</h3>
+              <p class="day-description-text">
+                Post breakfast, visit <strong>Chintamani</strong> at Theur situated at the confluence of Mula-Mutha rivers. Drive to <strong>Siddhivinayak</strong> at Siddhatek on the banks of Bhima river (where Lord Vishnu attained siddhi). In the afternoon, visit <strong>Mayureshwar</strong> at Morgaon, the foremost temple of the Ashtavinayak with a majestic peacock motif and Nandi facing the deity. Overnight in Pune circuit.
+              </p>
+            </div>
+
+            <div class="itinerary-day-card">
+              <div class="itinerary-day-header">
+                <span class="day-badge-label">Day 3</span>
+                <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa fa-map-pin"></i> Lenyadri » Ozar » Ranjangaon » Mumbai</span>
+              </div>
+              <h3 class="day-title-text">Girijatmaj (Lenyadri Caves), Vighnahar (Ozar) & Mahaganpati (Ranjangaon)</h3>
+              <p class="day-description-text">
+                Morning visit to <strong>Girijatmaj</strong> at Lenyadri, carved inside Buddhist rock cave No. 7 atop 307 stone steps (palanquin/doli service available for elderly). Proceed to <strong>Vighneshwar</strong> at Ozar with its shimmering golden dome, and conclude the yatra at the powerful <strong>Mahaganpati</strong> in Ranjangaon. Complete the circuit and return comfortably to Mumbai with divine blessings.
+              </p>
+            </div>
+          </article>
+
+          <!-- Inclusions & Exclusions -->
+          <article class="pkg-card-box" id="inclusionsSection">
+            <h2 class="pkg-card-title"><i class="fa fa-list-check"></i> What's Included & Excluded</h2>
+            <div class="inc-exc-grid">
+              <div class="inc-box">
+                <div class="inc-box-title"><i class="fa fa-circle-check"></i> Inclusions</div>
+                <ul class="feature-check-list">
+                  <li><i class="fa fa-check"></i> 2 Nights hotel stay in clean family hotels (Pune/Junnar)</li>
+                  <li><i class="fa fa-check"></i> Pure vegetarian breakfast and dinners daily</li>
+                  <li><i class="fa fa-check"></i> Dedicated AC Sedan / Innova for the entire 8-temple circuit</li>
+                  <li><i class="fa fa-check"></i> All highway toll taxes, parking fees & driver allowances</li>
+                  <li><i class="fa fa-check"></i> Safe doorstep pickup and drop in Mumbai</li>
+                </ul>
+              </div>
+
+              <div class="exc-box">
+                <div class="exc-box-title"><i class="fa fa-circle-xmark"></i> Exclusions</div>
+                <ul class="feature-check-list">
+                  <li><i class="fa fa-xmark"></i> Direct temple pooja tickets, thali and dakshina</li>
+                  <li><i class="fa fa-xmark"></i> Palanquin (Doli) charges at Lenyadri steps</li>
+                  <li><i class="fa fa-xmark"></i> Lunches and personal expenditure</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </main>
+
+        <!-- Right Sticky Sidebar -->
+        <aside class="pkg-sticky-sidebar" id="packageBookingSidebar">
+          <div class="sidebar-booking-card">
+            <div class="sidebar-card-header">
+              <h3>Book Ashtavinayak Yatra</h3>
+              <p>Special Devotee Package • Instant WhatsApp Quote</p>
+            </div>
+
+            <div class="sidebar-card-body" id="packageBookingCardBody">
+              <div class="sidebar-price-banner">
+                <div>
+                  <span style="font-size:0.75rem; color:var(--text-muted); display:block;">Special Fare</span>
+                  <strong style="font-size:1.5rem; color:var(--primary); font-family:'Outfit',sans-serif;">₹11,200</strong>
+                  <span style="font-size:0.75rem; color:var(--text-muted);">/ person</span>
+                </div>
+                <span class="pkg-badge pkg-badge-bestseller" style="font-size:0.7rem;">Save ₹4,300</span>
+              </div>
+
+              <form id="packageBookingForm" data-pkg-title="Ashtavinayak 8 Ganesha Darshan from Mumbai">
+                <div class="sidebar-booking-form">
+                  <div class="form-group-custom">
+                    <label for="fullName">Devotee Name *</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="e.g. Dilip Shinde" required>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="phone">Phone / WhatsApp *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. +91 98765 43210" required>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. dilip@example.com" required>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="travelDate">Yatra Start Date *</label>
+                    <input type="date" id="travelDate" name="travelDate" required>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="travelers">Total Devotees *</label>
+                    <select id="travelers" name="travelers">
+                      <option value="2 Adults (Couple / Twin Sharing)">2 Adults (Couple / Twin Sharing)</option>
+                      <option value="Family with Elders (3 to 5 Persons)">Family with Elders (3 to 5 Persons)</option>
+                      <option value="Family Group (6 to 10 Persons)">Family Group (6 to 10 Persons)</option>
+                      <option value="Large Bus / Tempo Group (12+)">Large Bus / Tempo Group (12+)</option>
+                    </select>
+                  </div>
+                  <div class="form-group-custom">
+                    <label for="message">Special Notes (Senior Citizens / Doli)</label>
+                    <textarea id="message" name="message" rows="2" placeholder="Tell us if you need pickup from Thane/Navi Mumbai..."></textarea>
+                  </div>
+                  <button type="submit" class="btn-custom btn-secondary-custom" style="width:100%; margin-top:8px;">
+                    <i class="fa fa-paper-plane"></i> Get Free Quote on WhatsApp
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="sidebar-help-box">
+            <div style="width:48px; height:48px; border-radius:50%; background:var(--secondary-soft); color:var(--secondary); display:inline-flex; align-items:center; justify-content:center; font-size:1.3rem; margin-bottom:10px;">
+              <i class="fa fa-phone-volume"></i>
+            </div>
+            <h4>Pilgrimage Desk</h4>
+            <p>Our sacred travel advisor is ready to assist your family.</p>
+            <a href="tel:+919876543210" class="btn-custom btn-primary-custom" style="width:100%; margin-bottom:8px;">
+              <i class="fa fa-phone"></i> +91 98765 43210
+            </a>
+            <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20have%20questions%20on%20Ashtavinayak%20Yatra." class="btn-custom" style="background:#25d366; color:#fff; width:100%;">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-col">
+          <div class="brand-titles" style="margin-bottom:14px;">
+            <span class="brand-title-main" style="color:#ffffff;">DEV TOUR <span style="color:var(--secondary)">& TRAVELS</span></span>
+            <span class="brand-tagline" style="color:#94a3b8;">Crafting Extraordinary Journeys</span>
+          </div>
+          <p style="color:#94a3b8; font-size:0.85rem; line-height:1.6;">
+            Specialists in sacred Maharashtra pilgrim tours with verified stays and compassionate chauffeur hospitality.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Popular Tours in India</h4>
+          <ul class="footer-nav-list">
+            <li><a href="ashtavinayak-ganesha-darshan.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Ashtavinayak Darshan</a></li>
+            <li><a href="mumbai-shirdi-trimbakeshwar-yatra.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Shirdi & Nashik Yatra</a></li>
+            <li><a href="mumbai-highlights-bollywood-tour.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Mumbai Highlights Tour</a></li>
+            <li><a href="mumbai-express-heritage-tour.html"><i class="fa fa-chevron-right" style="font-size:0.7rem; color:var(--secondary)"></i> Express Heritage Tour</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html#faqSection">Frequently Asked Questions</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollToBookingForm()">Custom Itinerary Request</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="footer-contact-items">
+            <li><i class="fa fa-phone"></i> +91 98765 43210 / +91 99100 49132</li>
+            <li><i class="fa fa-envelope"></i> info@devtourandtravels.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <p>© 2026 <strong>Dev Tour and Travels</strong>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Action Bar -->
+  <div class="mobile-bottom-quickbar">
+    <div class="mobile-bottom-grid">
+      <a href="tel:+919876543210" class="mobile-bottom-item call"><i class="fa fa-phone"></i><span>Call</span></a>
+      <a href="https://wa.me/919876543210?text=Hi%20Dev%20Tour%20and%20Travels!%20I%20want%20to%20book%20Ashtavinayak%20Yatra." target="_blank" class="mobile-bottom-item whatsapp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+      <a href="javascript:void(0)" onclick="scrollToBookingForm()" class="mobile-bottom-item enquiry"><i class="fa fa-paper-plane"></i><span>Book ₹11,200</span></a>
+    </div>
+  </div>
+
+  <script src="js/package-page.js"></script>
+</body>
+</html>

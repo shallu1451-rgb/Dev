@@ -14,6 +14,7 @@ const TOURS_DATA = [
     id: "pkg-1",
     title: "Mumbai City Highlights & Bollywood Glamour Tour",
     category: "mumbai",
+    pageUrl: "mumbai-highlights-bollywood-tour.html",
     durationDays: 3,
     durationNights: 2,
     durationLabel: "02 Nights / 03 Days",
@@ -50,6 +51,7 @@ const TOURS_DATA = [
     id: "pkg-2",
     title: "2 Days Express Mumbai Heritage & Marine Drive Tour",
     category: "mumbai",
+    pageUrl: "mumbai-express-heritage-tour.html",
     durationDays: 2,
     durationNights: 1,
     durationLabel: "01 Night / 02 Days",
@@ -83,6 +85,7 @@ const TOURS_DATA = [
     id: "pkg-3",
     title: "Mumbai, Shirdi Sai Darshan & Trimbakeshwar Yatra",
     category: "pilgrimage",
+    pageUrl: "mumbai-shirdi-trimbakeshwar-yatra.html",
     durationDays: 5,
     durationNights: 4,
     durationLabel: "04 Nights / 05 Days",
@@ -120,6 +123,7 @@ const TOURS_DATA = [
     id: "pkg-4",
     title: "Mumbai & Lonavala Khandala Scenic Hill Escape",
     category: "nature",
+    pageUrl: "mumbai-lonavala-khandala-escape.html",
     durationDays: 4,
     durationNights: 3,
     durationLabel: "03 Nights / 04 Days",
@@ -155,6 +159,7 @@ const TOURS_DATA = [
     id: "pkg-5",
     title: "Mumbai to Goa Sun & Sand Coastal Odyssey",
     category: "beach",
+    pageUrl: "mumbai-to-goa-coastal-odyssey.html",
     durationDays: 7,
     durationNights: 6,
     durationLabel: "06 Nights / 07 Days",
@@ -194,6 +199,7 @@ const TOURS_DATA = [
     id: "pkg-6",
     title: "Golden Triangle with Mumbai Express Tour",
     category: "heritage",
+    pageUrl: "golden-triangle-mumbai-express.html",
     durationDays: 8,
     durationNights: 7,
     durationLabel: "07 Nights / 08 Days",
@@ -234,6 +240,7 @@ const TOURS_DATA = [
     id: "pkg-7",
     title: "Ashtavinayak 8 Ganesha Darshan from Mumbai",
     category: "pilgrimage",
+    pageUrl: "ashtavinayak-ganesha-darshan.html",
     durationDays: 3,
     durationNights: 2,
     durationLabel: "02 Nights / 03 Days",
@@ -268,6 +275,7 @@ const TOURS_DATA = [
     id: "pkg-8",
     title: "Royal Rajasthan Grand Expedition from Mumbai",
     category: "heritage",
+    pageUrl: "royal-rajasthan-grand-expedition.html",
     durationDays: 7,
     durationNights: 6,
     durationLabel: "06 Nights / 07 Days",
@@ -527,7 +535,9 @@ function renderPackages(list) {
   container.innerHTML = list.map(pkg => `
     <article class="package-card" id="${pkg.id}">
       <div class="card-media-wrap">
-        <img src="${pkg.image}" alt="${pkg.title}" loading="lazy">
+        <a href="${pkg.pageUrl}">
+          <img src="${pkg.image}" alt="${pkg.title}" loading="lazy">
+        </a>
         <span class="badge-tag ${pkg.badgeType === 'bestseller' ? 'badge-bestseller' : pkg.badgeType === 'luxury' ? 'badge-luxury' : ''}">
           <i class="fa fa-award"></i> ${pkg.badge}
         </span>
@@ -546,7 +556,7 @@ function renderPackages(list) {
           </div>
 
           <h3 class="card-title">
-            <a href="javascript:void(0)" onclick="openItineraryModal('${pkg.id}')">${pkg.title}</a>
+            <a href="${pkg.pageUrl}">${pkg.title}</a>
           </h3>
 
           <p class="card-routes">
@@ -570,11 +580,11 @@ function renderPackages(list) {
         <span class="price-sub-note">per person on twin sharing</span>
 
         <div class="card-action-btns-stack">
-          <button class="btn-custom btn-primary-custom" onclick="openItineraryModal('${pkg.id}')">
-            <i class="fa fa-file-text"></i> View Details
-          </button>
+          <a href="${pkg.pageUrl}" class="btn-custom btn-primary-custom">
+            <i class="fa fa-file-text"></i> View Package
+          </a>
           <button class="btn-custom btn-secondary-custom" onclick="openBookingModal('${pkg.id}')">
-            <i class="fa fa-paper-plane"></i> Book / Enquire
+            <i class="fa fa-paper-plane"></i> Quick Enquiry
           </button>
         </div>
       </div>
